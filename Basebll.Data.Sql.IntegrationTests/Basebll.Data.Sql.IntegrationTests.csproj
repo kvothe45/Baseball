@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlSecurityTests.cs" />
+    <Compile Include="SqlTaskManagerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Baseball.Data.Sql\Baseball.Data.Sql.csproj">
