@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baseball.Data.Sql", "Baseball.Data.Sql\Baseball.Data.Sql.csproj", "{DE334730-5513-479A-A90C-7E793F150540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basebll.Data.Sql.IntegrationTests", "Basebll.Data.Sql.IntegrationTests\Basebll.Data.Sql.IntegrationTests.csproj", "{76DCEAB3-9D92-4488-8473-F87A92528A74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE334730-5513-479A-A90C-7E793F150540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE334730-5513-479A-A90C-7E793F150540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE334730-5513-479A-A90C-7E793F150540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE334730-5513-479A-A90C-7E793F150540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76DCEAB3-9D92-4488-8473-F87A92528A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76DCEAB3-9D92-4488-8473-F87A92528A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76DCEAB3-9D92-4488-8473-F87A92528A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76DCEAB3-9D92-4488-8473-F87A92528A74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
