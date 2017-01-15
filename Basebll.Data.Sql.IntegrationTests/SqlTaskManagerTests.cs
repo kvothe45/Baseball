@@ -13,7 +13,7 @@ namespace Basebll.Data.Sql.IntegrationTests
         public void FullCycleTest()
         {
             ClearAllTasks();
-            var manager = new SqlTaskManager();
+            var manager = new SqlTaskManager(connectionString);
 
             Assert.AreEqual(0, manager.GetAll().Count());
             manager.Add("Task1");
