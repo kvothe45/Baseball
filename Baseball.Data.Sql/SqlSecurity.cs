@@ -31,7 +31,14 @@ namespace Baseball.Data.Sql
                         {
                             throw new InvalidOperationException();
                         }
-                        throw new NotImplementedException();
+                        rdr.Read();
+                        var person = new Person();
+                        person.PersonId = rdr.GetInt32(0);
+                        person.IsPlayer = rdr.GetBoolean(3);
+                        person.IsCaptain = rdr.GetBoolean(4);
+                        person.DisplayName = rdr.GetString(5);
+                        return person;
+
                     }
 
                 }
