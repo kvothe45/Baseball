@@ -7,8 +7,9 @@ namespace Basebll.Data.Sql.IntegrationTests
 {
     class SqlSecurityTests
     {
-
-        private const string connectionString = "Server=.Database=Baseball;Integrated_Security=true;";
+        //This is the generic line for the current active server when you only have one instance running
+        //private const string connectionString = "Server=.;Database=Baseball;Integrated Security=true;";
+        private const string connectionString = "Server=DESKTOP-DGL4MS0;Database=Baseball;Integrated Security=true;";
 
         [Test]
         public void WhenUserDoesNotExist_ThrowsException()

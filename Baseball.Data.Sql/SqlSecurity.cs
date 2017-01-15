@@ -18,7 +18,23 @@ namespace Baseball.Data.Sql
 
             using (var con = new SqlConnection(connectionString))
             {
+                con.Open();
+                using (var com = new SqlCommand())
+                {
+                    com.Connection = con;
+                    com.CommandText = "SELECT * FROM Person WHERE Username = @Username AND Password = @Password";
+                    com.Parameters.AddWithValue("@Username", username);
+                    com.Parameters.AddWithValue("@Password", password);
+                    using (var rdr = com.ExecuteReader())
+                    {
+                        if (!rdr.HasRows)
+                        {
+                            throw new InvalidOperationException();
+                        }
+                        throw new NotImplementedException();
+                    }
 
+                }
             }
 
             throw new NotImplementedException();
