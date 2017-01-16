@@ -2,6 +2,7 @@
 using Baseball.Web.Models;
 using System.Configuration;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace Baseball.Web.Controllers
 {
@@ -17,8 +18,7 @@ namespace Baseball.Web.Controllers
         {
             var security = new SqlSecurity(ConfigurationManager.ConnectionStrings["Baseball"].ConnectionString);
             var person = security.Authenticate(model.userName, model.password);
-
-
+            FormsAuthentication.SetAuthCookie(person.Username, true);
 
             return View();
         }

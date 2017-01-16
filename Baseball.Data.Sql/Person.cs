@@ -4,6 +4,7 @@
     {
 
         public int PersonId;
+        public string Username;
         public bool IsPlayer;
         public bool IsCaptain;
         public string DisplayName;
