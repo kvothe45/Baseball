@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Baseball.Data.Sql.TaskItem>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+<div>
+    Test
+</div>
+<div>
+    @foreach (var task in Model)
+    {
+        <div>
+            <label>Task:</label>@task.Name
+        </div>
+    }
+</div>
+</body>
+</html>

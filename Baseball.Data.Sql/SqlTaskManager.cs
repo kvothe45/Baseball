@@ -68,7 +68,7 @@ namespace Baseball.Data.Sql
                 using (var com = new SqlCommand())
                 {
                     com.Connection = con;
-                    com.CommandText = "SELECT * FROM TaskList";
+                    com.CommandText = "SELECT * FROM TaskItem";
                     using (var rdr = com.ExecuteReader())
                     {
                         var list = new List<TaskItem>();

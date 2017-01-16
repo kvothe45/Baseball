@@ -22,5 +22,15 @@ namespace Baseball.Web.Controllers
 
             return View();
         }
+
+        public ActionResult Test()
+        {
+            var taskManager = new SqlTaskManager(ConfigurationManager.ConnectionStrings["BaseBall"].ConnectionString);
+            var tasks = taskManager.GetAll();
+            return View(tasks);
+
+        }
+
+
     }
 }
