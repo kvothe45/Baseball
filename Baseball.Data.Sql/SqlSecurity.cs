@@ -44,7 +44,7 @@ namespace Baseball.Data.Sql
                 }
             }
 
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
